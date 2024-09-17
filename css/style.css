@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* padding-top: -30; */
+}
+
+.botones{
+    padding: 9px;
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.botones a{
+    background-color: #0a2be9;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+
+}
+
+.botones a:focus{
+    background-color: rgb(50, 194, 194);
+}
+
+.greetings{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        /* Colores vivos para el destello */
+        color: #fff;
+        text-shadow: 0 0 12px #ff0000, 0 0 50px #ffbf00, 0 0 100px #00ff00,
+                     0 0 150px #00bfff, 0 0 200px #ff00ff;
+    }
+    25% {
+        text-shadow: 0 0 12px #00ff00, 0 0 50px #ff0000, 0 0 100px #ffbf00,
+                     0 0 150px #ff00ff, 0 0 200px #00bfff;
+    }
+    50% {
+        text-shadow: 0 0 12px #00bfff, 0 0 50px #ff00ff, 0 0 100px #ffbf00,
+                     0 0 150px #00ff00, 0 0 200px #ff0000;
+    }
+    75% {
+        text-shadow: 0 0 12px #ffbf00, 0 0 50px #00ff00, 0 0 100px #ff00ff,
+                     0 0 150px #ff0000, 0 0 200px #00bfff;
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width: 574px) {
+    .greetings {
+        font-size: 3rem; /* Ajustar tamaño de fuente */
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2rem; /* Reducir tamaño de descripción */
+        margin-bottom: 10px; /* Ajustar espacio */
+    }
+
+    .button a {
+        font-size: 0.9rem; /* Ajustar tamaño del botón */
+        padding: 6px;
+    }
+
+    /* Ajustar el título de la segunda página */
+    /* Estilo para el título */
+.titulo {
+    font-size: 40px;
+    color: yellow;
+    text-align: center;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #00ff00, 0 0 30px #0000ff;
+    animation: colorChange 3s infinite;
+    font-weight: bold;
+}
+
+/* Estilo para el subtítulo */
+.subtitulo {
+    font-size: 35px;
+    color: yellow;
+    text-align: center;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ffbf00, 0 0 30px #ff00ff;
+    animation: colorChange 3s infinite;
+    font-weight: bold;
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+    0% {
+        color: #ff0000; /* Rojo */
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ffbf00, 0 0 30px #ff00ff;
+    }
+    25% {
+        color: #ffbf00; /* Amarillo brillante */
+        text-shadow: 0 0 10px #ffbf00, 0 0 20px #00ff00, 0 0 30px #00bfff;
+    }
+    50% {
+        color: #00ff00; /* Verde */
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #0000ff, 0 0 30px #ff00ff;
+    }
+    75% {
+        color: #0000ff; /* Azul */
+        text-shadow: 0 0 10px #0000ff, 0 0 20px #ff0000, 0 0 30px #ffbf00;
+    }
+    100% {
+        color: #ff00ff; /* Púrpura */
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff00, 0 0 30px #0000ff;
+    }
+}
+    /* Si hay imágenes, puedes añadirles max-width: 100%; para que se ajusten automáticamente */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
